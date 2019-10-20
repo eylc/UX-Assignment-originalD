@@ -1,4 +1,402 @@
 html {
     font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     color: rgb(216, 216, 216);
+}
+body {
+    /* background: url("images/bg.png") no-repeat center center;
+    background-size: cover; */
+    background: linear-gradient(-45deg, #BB3B56,#1C3763);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 900;
+    font-size: 220%;
+    color: #ffffff;
+
+}
+a {
+    color: rgb(218, 218, 218);
+}
+a:hover {
+    color: rgb(255, 255, 255);
+}
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+/*--  HEADER START --*/
+.headerAlign {
+    height: 10%;
+    /* background-color:  cadetblue;
+    border: 2px solid crimson; */
+}
+.logo {
+    /* background-color:  blue;
+    border: 2px solid crimson; */
+    padding: 1em 0 0 0;
+}
+.logoImg {
+    width: 10em;
+}
+.cta_startff {
+    /* background-color:  coral;
+    border: 2px solid crimson; */
+    padding: 2.5em 0 1.5em 5em;
+}
+.cta_startff .btn {
+    width: 200px;
+    height: 30px;
+    font-size: 60%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    border-color: white;
+}
+.cta_startff .btn:hover {
+    background-color: rgb(61, 94, 148);
+}
+/*--  HEADER END --*/
+
+
+/*--  SIGN-IN START --*/
+
+.signInAlign {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    
+    align-items: center;
+    justify-content: flex-end;
+
+    /* background-color:  cyan;
+    border: 2px solid crimson; */
+}
+.signInBox {
+    top: -5em;
+    left: -17em;
+    /* background-color:  darkorange;
+    border: 2px solid crimson; */
+}
+/* .signInContentsBox {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    flex-direction: column;
+    transition: 1s ease-in-out;
+
+    background-color:  darkorange;
+    border: 2px solid crimson;
+} */
+
+.formSection {
+    padding: 1em 0;
+}
+.form-group {
+    position: relative;
+    padding: 1em 0 0;
+}
+.form-group label {
+    position: absolute;
+    bottom: 0.4em;
+    left: 1.3em;
+    color: white;
+    font-weight: 600;
+    font-size: 150%;
+    transition: .3s ease-in;
+}
+.form_control{
+    /* position: relative; */
+    width: 550px;
+    height: 70px;
+    background: none;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 40px;
+    font-size: 150%;
+    font-weight: 600;
+    color: white;
+    padding: 5px 30px;
+    transition: 0.1s ease-in-out;
+}
+.form_control:focus ~ label,
+.form_control:valid ~ label {
+    bottom: 1em;
+    left: 30em;
+    color: rgb(17, 226, 28);
+    font-size: 90%;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.3));
+}
+
+::-webkit-input-placeholder{
+    color: white;
+}
+.nextBtn {
+    position: relative;
+    padding: 1em 0 0;
+}
+.nextBtn .btn {
+    width: 550px;
+    height: 60px;
+    background-color: #1C3763;
+    border: none;
+    font-size: 90%;
+    font-weight: 600;
+}
+.nextBtn .btn:hover {
+    background-color: rgb(19, 90, 206);
+}
+.arrowIcon {
+    position: absolute;
+    width: 0.8em;
+    left: 18.6em;
+    bottom: 1.4em;
+}
+.end {
+    width: 550px;
+    text-align: end;
+    
+    /* background-color:  violet;
+    border: 2px solid crimson; */
+}
+
+.end h6 {
+    font-size: 90%;
+    color: rgb(218, 218, 218);
+}
+
+/*--  SIGN-IN END --*/
+
+/*--  ILLUSTRATION START --*/
+
+.illustBox {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.img-fluid {
+    position: absolute;
+    /* background-color: steelblue;
+    border: 1px solid crimson; */
+    height: 100vh;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+
+/*--  ILLUSTRATION END --*/
+
+
+
+
+@media screen and (max-width: 1366px) {
+    .img-fluid {
+        opacity: 0.9;
+    }
+    .signInBox {
+        /* left: -2em; */
+    }
+    .form_control{
+        width: 530px;
+        /* height: 70px;
+        font-size: 150%; */
+    }
+    .nextBtn .btn {
+        width: 530px;
+        /* height: 60px;
+        font-size: 90%; */
+    }
+    .arrowIcon {
+        left: 18em;
+    }
+    .end {
+        width: 530px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .img-fluid {
+        opacity: 0.75;
+    }
+    .signInBox {
+        /* left: -5em; */
+    }
+    .form_control{
+        width: 510px;
+    }
+    .nextBtn .btn {
+        width: 510px;
+    }
+    .arrowIcon {
+        left: 17.5em;
+        bottom: 1.4em;
+    }
+    .form_control:focus ~ label,
+    .form_control:valid ~ label {
+        left: 28em;
+    }
+    .end {
+        width: 510px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .img-fluid {
+        opacity: 0.5;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    .cta_startff {
+        padding: 2.5em 0 1.5em;
+    }
+    .form-group label {
+        bottom: 0.25em;
+        font-size: 140%;
+    }
+    .form_control{
+        width: 460px;
+        height: 60px;
+        font-size: 140%;
+    }
+    .form_control:focus ~ label,
+    .form_control:valid ~ label {
+        bottom: 1em;
+        left: 29em;
+        font-size: 80%;
+    }
+    .nextBtn .btn {
+        width: 460px;
+        height: 50px;
+        font-size: 80%;
+    }
+    .arrowIcon {
+        width: 0.7em;
+        left: 15.8em;
+        bottom: 1.1em;
+    }
+    .end {
+        width: 460px;
+    }
+    .end h6 {
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .img-fluid {
+        opacity: 0.4;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    .cta_startff {
+        left: -2em;
+    }
+    .cta_startff .btn {
+        width: 150px;
+        height: 30px;
+        font-size: 50%;
+    }
+    .signInAlign {
+        justify-content: center;
+    }
+    .signInBox {
+        left: -7em;
+    }
+    .form-group label {
+        bottom: 0.25em;
+        font-size: 130%;
+    }
+    .form_control{
+        width: 440px;
+        height: 50px;
+        font-size: 130%;
+    }
+    .form_control:focus ~ label,
+    .form_control:valid ~ label {
+        bottom: 0.8em;
+        left: 32em;
+        font-size: 70%;
+    }
+    .nextBtn .btn {
+        width: 440px;
+        height: 40px;
+        font-size:70%;
+    }
+    .arrowIcon {
+        width: 0.6em;
+        left: 15em;
+        bottom: 0.95em;
+    }
+    .end {
+        width: 440px;
+    }
+    .end h6 {
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .img-fluid {
+        opacity: 0.3;
+    }
+    h1 {
+        font-size: 120%;
+    }
+    .cta_startff {
+        left: -4em;
+    }
+    .cta_startff .btn {
+        width: 120px;
+        height: 30px;
+        letter-spacing: 0;
+        /* font-size: 50%; */
+    }
+    .signInBox {
+        left: -4em;
+        top: -5em;
+    }
+    .formSection {
+        padding: 0;
+    }
+    .form-group label {
+        bottom: 0.25em;
+        font-size: 80%;
+    }
+    .form_control{
+        width: 250px;
+        height: 40px;
+        font-size: 110%;
+    }
+    .form_control:focus ~ label,
+    .form_control:valid ~ label {
+        bottom: 0.7em;
+        left: 23em;
+        font-size: 50%;
+    }
+    .nextBtn .btn {
+        width: 250px;
+        height: 35px;
+        font-size:60%;
+    }
+    .arrowIcon {
+        width: 0.5em;
+        left: 8.8em;
+        bottom: 0.8em;
+    }
+    .end {
+        width: 250px;
+    }
+    .end h6 {
+        font-size: 60%;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .signInBox {
+        left: -5.5em;
+    }
 }
