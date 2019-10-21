@@ -4,8 +4,6 @@ html {
     color: rgb(216, 216, 216);
 }
 body {
-    /* background: url("images/bg.png") no-repeat center center;
-    background-size: cover; */
     background: linear-gradient(-45deg, #BB3B56,#1C3763);
     overflow-y: hidden;
     overflow-x: hidden;
@@ -15,7 +13,6 @@ h1 {
     font-weight: 900;
     font-size: 220%;
     color: #ffffff;
-
 }
 a {
     color: rgb(218, 218, 218);
@@ -28,22 +25,17 @@ a:hover {
     height: 100%;
 }
 /*--  HEADER START --*/
+
 .headerAlign {
     height: 10%;
-    /* background-color:  cadetblue;
-    border: 2px solid crimson; */
 }
 .logo {
-    /* background-color:  blue;
-    border: 2px solid crimson; */
     padding: 1em 0 0 0;
 }
 .logoImg {
     width: 10em;
 }
 .cta_startff {
-    /* background-color:  coral;
-    border: 2px solid crimson; */
     padding: 2.5em 0 1.5em 5em;
 }
 .cta_startff .btn {
@@ -68,31 +60,13 @@ a:hover {
     z-index: 2;
     width: 100%;
     height: 100%;
-    
     align-items: center;
     justify-content: flex-end;
-
-    /* background-color:  cyan;
-    border: 2px solid crimson; */
 }
 .signInBox {
     top: -5em;
     left: -17em;
-    /* background-color:  darkorange;
-    border: 2px solid crimson; */
 }
-/* .signInContentsBox {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end; 
-    flex-direction: column;
-    transition: 1s ease-in-out;
-
-    background-color:  darkorange;
-    border: 2px solid crimson;
-} */
-
 .formSection {
     padding: 1em 0;
 }
@@ -110,7 +84,6 @@ a:hover {
     transition: .3s ease-in;
 }
 .form_control{
-    /* position: relative; */
     width: 550px;
     height: 70px;
     background: none;
@@ -127,9 +100,9 @@ a:hover {
 .form_control:valid ~ label {
     bottom: 1em;
     left: 30em;
-    color: rgb(17, 226, 28);
+    color: rgb(29, 111, 243);
     font-size: 90%;
-    filter: drop-shadow(0 0 4px rgba(255,255,255,0.3));
+    filter: drop-shadow(0 0 2px rgba(145, 187, 255, 0.3));
 }
 
 ::-webkit-input-placeholder{
@@ -159,12 +132,10 @@ a:hover {
 .end {
     width: 550px;
     text-align: end;
-    
-    /* background-color:  violet;
-    border: 2px solid crimson; */
 }
 
 .end h6 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 90%;
     color: rgb(218, 218, 218);
 }
@@ -183,8 +154,6 @@ a:hover {
 }
 .img-fluid {
     position: absolute;
-    /* background-color: steelblue;
-    border: 1px solid crimson; */
     height: 100vh;
     object-fit: cover;
     transition: 0.2s ease-in-out;
@@ -193,24 +162,15 @@ a:hover {
 /*--  ILLUSTRATION END --*/
 
 
-
-
 @media screen and (max-width: 1366px) {
     .img-fluid {
         opacity: 0.9;
     }
-    .signInBox {
-        /* left: -2em; */
-    }
     .form_control{
         width: 530px;
-        /* height: 70px;
-        font-size: 150%; */
     }
     .nextBtn .btn {
         width: 530px;
-        /* height: 60px;
-        font-size: 90%; */
     }
     .arrowIcon {
         left: 18em;
@@ -222,9 +182,6 @@ a:hover {
 @media screen and (max-width: 1280px) {
     .img-fluid {
         opacity: 0.75;
-    }
-    .signInBox {
-        /* left: -5em; */
     }
     .form_control{
         width: 510px;
@@ -295,6 +252,7 @@ a:hover {
     }
     .cta_startff {
         left: -2em;
+        padding: 3em 0;
     }
     .cta_startff .btn {
         width: 150px;
@@ -308,7 +266,7 @@ a:hover {
         left: -7em;
     }
     .form-group label {
-        bottom: 0.25em;
+        bottom: 0.1em;
         font-size: 130%;
     }
     .form_control{
@@ -346,14 +304,20 @@ a:hover {
     h1 {
         font-size: 120%;
     }
+    .logo{
+        top: 0.5em;
+    }
+    .logoImg {
+        width: 6em;
+    }
     .cta_startff {
-        left: -4em;
+        left: -1.5em;
+        padding: 2.2em 0;
     }
     .cta_startff .btn {
         width: 120px;
-        height: 30px;
+        height: 25px;
         letter-spacing: 0;
-        /* font-size: 50%; */
     }
     .signInBox {
         left: -4em;
@@ -363,7 +327,7 @@ a:hover {
         padding: 0;
     }
     .form-group label {
-        bottom: 0.25em;
+        bottom: 0.2em;
         font-size: 80%;
     }
     .form_control{
@@ -395,8 +359,24 @@ a:hover {
     }
 }
 @media screen and (max-width: 400px) {
-
     .signInBox {
         left: -5.5em;
+    }
+    .cta_startff {
+        left: -2em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo{
+        top: 0.5em;
+        left: -0.5em;
+    }
+    .cta_startff {
+        left: -3.5em;
+    }
+    .cta_startff .btn {
+        width: 100px;
+        height: 25px;
     }
 }
