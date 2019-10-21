@@ -161,7 +161,7 @@ a:hover {
 
 /*--  ILLUSTRATION END --*/
 
-
+ /*--  RESPONSIVE START --*/
 @media screen and (max-width: 1366px) {
     .img-fluid {
         opacity: 0.9;
@@ -380,3 +380,4 @@ a:hover {
         height: 25px;
     }
 }
+ /*--  RESPONSIVE END --*/
